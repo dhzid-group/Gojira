@@ -55,7 +55,7 @@
   <div class="container mt-4 ">
     <div class="row">
       <div class="col-xl-6 col-lg-12">
-        <div class="card-tiktok text-white p-3 mb-4" onclick="tiktokClicked()">
+        <div class="card-tiktok card text-white p-3 mb-4" onclick="tiktokClicked()">
           <div class="row">
             <div class="col-3"><img src="asset/tik-tok-logo-33080.png" class="size-tiktok" alt=""></div>
             <div class="col-9 p-1"><b class="text-white text-tiktok d-block">Tiktok</b>
@@ -68,7 +68,7 @@
         </div>
       </div>
       <div class="col-xl-6 col-lg-12">
-        <div class="card-ig text-white p-3 mb-4" onclick="igClicked()">
+        <div class="card-ig card text-white p-3 mb-4" onclick="igClicked()">
           <div class="row">
             <div class="col-3"><img src="asset/logo-ig-png-32464.png" class="size-ig" alt=""></div>
             <div class="col-9 p-1"><b class="text-white text-tiktok d-block">Instagram</b>
@@ -84,24 +84,20 @@
   </div>
   <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script> -->
   <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script src="js/index.js"></script>
   <script>
+    gsap.from('.card-tiktok', { duration: 1.5, x: -100, opacity: 0, ease: 'power2'})
+    gsap.from('.card-ig', { duration: 1.5,x: 100, opacity: 0, ease: 'power2'})
+    gsap.from('.navbar', { duration: 1, y: -100, opacity: 0, ease: 'sine'})
+
     const tiktokClicked = () => {
       window.location.href = 'https://www.tiktok.com/@gojira.06'
     }
     const igClicked = () => {
       window.location.href = 'https://instagram.com/gojira.06'
     }
-
-    
   </script>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <script>
-    gsap,from('.card-tiktok', { duration: 1.5, x: -100, opacity: 0, ease: 'power2'})
-    gsap.from('.navbar', { duration: 1, y: -100, opacity: 0, ease: 'sine'})
-
-  </script> 
 
 </body>
 
