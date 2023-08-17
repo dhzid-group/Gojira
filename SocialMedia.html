@@ -59,7 +59,7 @@
           <div class="row">
             <div class="col-3"><img src="asset/tik-tok-logo-33080.png" class="size-tiktok" alt=""></div>
             <div class="col-9 p-1"><b class="text-white text-tiktok d-block">Tiktok</b>
-              <h5 style="color: rgb(71, 121, 121);">@G0jira.</h5>
+              <h5 style="color: rgb(71, 121, 121); opacity: 0.5;">@G0jira.</h5>
             </div>
           </div>
           <div class="col-12 p-4">
@@ -72,7 +72,7 @@
           <div class="row">
             <div class="col-3"><img src="asset/logo-ig-png-32464.png" class="size-ig" alt=""></div>
             <div class="col-9 p-1"><b class="text-white text-tiktok d-block">Instagram</b>
-              <h5 style="color: rgb(71, 121, 121);">@gojira.06</h5>
+              <h5 style="color: rgb(71, 121, 121); opacity: 0.5;">@gojira.06</h5>
             </div>
           </div>
           <div class="col-12 p-4">
@@ -87,15 +87,15 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script src="js/index.js"></script>
   <script>
-    gsap.from('.card-tiktok', { duration: 1.3, x: -100, opacity: 0, ease: 'power2'})
-    gsap.from('.card-ig', { duration: 1.3,x: 100, opacity: 0, ease: 'power2'})
+    gsap.from('.card-tiktok', { duration: 1.3, x: -100, opacity: 0, ease: 'power1'})
+    gsap.from('.card-ig', { duration: 1.3,x: 100, opacity: 0, ease: 'power1'})
     gsap.from('.navbar', { duration: 1, y: -100, opacity: 0, ease: 'sine'})
 
     const tiktokClicked = () => {
-      window.location.href = 'https://www.tiktok.com/@gojira.06'
+      window.open('https://www.tiktok.com/@gojira.06', '_blank')
     }
     const igClicked = () => {
-      window.location.href = 'https://instagram.com/gojira.06'
+      window.open('https://instagram.com/gojira.06', '_blank')
     }
   </script>
 
