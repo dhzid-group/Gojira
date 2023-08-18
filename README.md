@@ -10,11 +10,10 @@
 
 ## Author
 
-👤 **dhzid-group & gojiRATed**
-
+👤 **dhzid-group**
 * Github: [@dhzid-group](https://github.com/dhzid-group)
+👤 **gojiRATed**
 * Github: [@gojiRATed](https://github.com/gojiRATed)
-
 ## Show your support
 
 Give a ⭐️ if this project helped you!
